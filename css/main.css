@@ -12,6 +12,13 @@
 	font-weight: normal;
 	font-style: normal;
 }
+@font-face {
+	font-family: 'BrandonGrotesque-Regular';
+	src: url('../fonts/BrandonGrotesque-Regular.ttf');
+	url('.../fonts/BrandonGrotesque-Regular') format('ttf'),
+	font-weight: normal;
+	font-style: normal;
+}
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -23,8 +30,11 @@ html, body {
     height: 100%;
 }
 body {
+	font-family: BrandonGrotesque-Regular;
+	width: 100%;
     line-height: 1.2;
     color: rgb(255, 255, 255);
+    letter-spacing: -1px;
 }
 header {
 	background: url(../images/bg.png) no-repeat;
@@ -65,4 +75,58 @@ header button a {
 	line-height: 58px;
 	text-decoration: none;
 }
-
+.wrapper {
+	width: 67%;
+	margin: 0 auto;
+}
+section {
+	padding: 98px 50px;
+	background-color: #111111;
+}
+section .title {
+	font-size: 60px;
+	font-family: BrandonGrotesque-Light;
+	text-align: center;
+}
+section .title span {
+	font-family: BrandonGrotesque-Bold;
+}
+section .sub-title {
+  	font-size: 22px;
+  	color: rgb(119, 119, 119);
+  	text-align: center;
+  	margin: 3px 0 78px;
+}
+section .flex-container, .flex-container-team {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+section .flex-container-team {
+	margin-top: 19px;
+}
+section .flex-container > div {
+	width: 27.5%;
+	height: 232px;
+	border: 7px solid #fff;
+	border-radius: 50%;
+}
+section .flex-container-team > div p {
+	font-size: 18px;
+	text-align: center;
+}
+section .flex-container-team .name {
+	font-family: BrandonGrotesque-Bold;
+}
+section .flex-container-team img {
+	width: 41px;
+	padding: 12px 4px;
+	text-align: center;
+}
+section .description {
+	font-size: 20px;
+	color: rgb(235, 235, 235);
+	margin: 36px auto 0;
+	max-width: 590px;
+	text-align: center;
+}
