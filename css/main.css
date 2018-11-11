@@ -1,0 +1,47 @@
+@font-face {
+	font-family: 'BrandonGrotesque-Light';
+	src: url('../fonts/BrandonGrotesque-Light.ttf');
+	url('.../fonts/BrandonGrotesque-Light.ttf') format('ttf'),
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'BrandonGrotesque-Bold';
+	src: url('../fonts/BrandonGrotesque-Bold.ttf');
+	url('.../fonts/BrandonGrotesque-Bold') format('ttf'),
+	font-weight: normal;
+	font-style: normal;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+body {
+    line-height: 1.2;
+    color: rgb(0, 0, 0);
+}
+header {
+	background: url(../images/bg.png) no-repeat;
+	background-size: cover;
+	height: 643px;
+	width: 1424px;
+	position: relative;
+}
+header .headline {
+	fill: white;
+	font-size: 32px;
+	font-family: BrandonGrotesque-Light;
+}
+header .headline_main {
+	fill: white;
+	font-size: 66px;
+	font-family: BrandonGrotesque-Bold;
+	text-transform: uppercase;
+}
+
